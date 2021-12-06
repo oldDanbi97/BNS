@@ -1,4 +1,4 @@
 # Boritgoge Network Service
-|front-end|back-end|DB|
-|:-:|:-:|:-:|
-|**react**|**Spring Boot**|**PostgreSQL**|
+|front-end|back-end|DB|etc
+|:-:|:-:|:-:|:-:|
+|**react**|**Spring Boot**|**PostgreSQL**|**aws, PostCss**|
