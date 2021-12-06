@@ -1,4 +1,4 @@
 # Boritgoge Network Service
-front-end: react
-back-end: Spring Boot
-DB: postgresql
+|front-end|back-end|DB|
+|:-:|:-:|:-:|
+|**react**|**Spring Boot**|**PostgreSQL**|
