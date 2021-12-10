@@ -1,7 +1,22 @@
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './app.css';
+import Home from './components/home';
+import Test from './components/test';
+import Title from './components/title';
 
 function App() {
-  return <h1>Hello :)</h1>;
+  return <>
+      <BrowserRouter>
+        <nav className="test-nav">
+          <Link to="/">Home</Link>
+          <Link to="/test">Test</Link>
+        </nav>
+        <Title />
+        <Routes>
+          <Route path="/" element={<Home/>} exact/>
+          <Route path="/test" element={<Test/>} exact/>
+        </Routes>
+      </BrowserRouter>
+    </>
 }
-
 export default App;
