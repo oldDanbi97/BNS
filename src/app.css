@@ -1,7 +1,9 @@
 .tmp-header {
   display: flex;
   height: 100px;
+  box-shadow: 0 0 5px;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 50px;
+  color:darkslategray;
 }
