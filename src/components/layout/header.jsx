@@ -5,10 +5,13 @@ const Header = (props) => {
     const navigate = useNavigate()
     const goHome = () => {
         navigate("/");
-    }
-
+    };
+    const hideNav = () =>{
+        
+    };
     return <div className="tmp-header">
-        <button className="header-logo" onClick={goHome}><i className="fas fa-money-bill-wave icon"></i></button>
+        <button className="header-menu" onClick={goHome}><i class="fas fa-bars"></i></button>
+        <button className="header-logo" onClick={hideNav}><i className="fas fa-money-bill-wave"></i></button>
     </div>
 };
 

@@ -25,6 +25,14 @@ button:active {
   color:darkslategray;
 }
 
+.header-menu {
+  font-size: 50px;
+  color:darkslategray;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .content {
   display: flex;
 }
