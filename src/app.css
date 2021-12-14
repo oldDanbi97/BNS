@@ -26,11 +26,11 @@ button:active {
 }
 
 .header-menu {
-  font-size: 50px;
+  font-size: 40px;
   color:darkslategray;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 25px;
+  left: 25px;
 }
 
 .content {

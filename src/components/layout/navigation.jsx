@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navigation = (props) => {
-    return <>
+const Navigation = props => {
+    return props.show ? <>
         <ul className="navigation">
             <li>
                 <Link className="menu-item" to="/">
@@ -15,7 +15,7 @@ const Navigation = (props) => {
                 </Link>
             </li>
         </ul>
-    </>
+    </> : <></>
 }; 
 
 export default Navigation;

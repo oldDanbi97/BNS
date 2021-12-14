@@ -1,17 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Header = (props) => {
-    const navigate = useNavigate()
+const Header = props => {
+    const navigate = useNavigate();
     const goHome = () => {
         navigate("/");
     };
-    const hideNav = () =>{
-        
+    const handleMenu = () => {
+        props.onMenuButton();
     };
     return <div className="tmp-header">
-        <button className="header-menu" onClick={goHome}><i class="fas fa-bars"></i></button>
-        <button className="header-logo" onClick={hideNav}><i className="fas fa-money-bill-wave"></i></button>
+        <button className="header-menu" onClick={handleMenu}><i className="fas fa-bars"></i></button>
+        <button className="header-logo" onClick={goHome}><i className="fas fa-money-bill-wave"></i></button>
     </div>
 };
 

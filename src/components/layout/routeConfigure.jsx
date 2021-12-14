@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../page/home';
 import Test from '../page/test';
 
-const RouteConfigure = (props) => {
+const RouteConfigure = props => {
     return <>
         <Routes>
             <Route path="/" element={<Home/>} exact/>
