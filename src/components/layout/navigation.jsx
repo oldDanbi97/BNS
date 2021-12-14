@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = props => {
+    useEffect(()=>{
+        console.log(`show updated: ${props.show}`);
+    }, [props.show]);
     return props.show ? <>
         <ul className="navigation">
             <li>
