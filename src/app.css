@@ -57,5 +57,7 @@ button:active {
 }
 
 .content-area {
-  margin: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
