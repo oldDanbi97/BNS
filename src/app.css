@@ -54,10 +54,9 @@ button:active {
   padding-left: 10px;
 }
 .input-area:focus {
-  outline: none; 
+  outline: none;
   background-color: rgb(200, 213, 228);
 }
-
 .header-menu-icon {
   font-size: 40px;
   color:darkslategray;

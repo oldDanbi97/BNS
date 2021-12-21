@@ -10,7 +10,7 @@ const Header = props => {
     return <div className="header">
         <div className="tmp-header">
             <div>
-                <button className="header-logo" onClick={goHome}>Boritgoge</button>
+                <button className="header-logo" onClick={goHome}>BNS</button>
                 <Link className="header-menu" to="/">home</Link>
                 <Link className="header-menu" to="/test">test</Link>
             </div>
