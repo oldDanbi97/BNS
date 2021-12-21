@@ -1,17 +1,21 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import SearchForm from '../template/searchForm';
 
 const Header = props => {
     const navigate = useNavigate();
     const goHome = () => {
         navigate("/");
     };
-    const handleMenu = () => {
-        props.onMenuButton();
-    };
-    return <div className="tmp-header">
-        <button className="header-menu" onClick={handleMenu}><i className="fas fa-bars"></i></button>
-        <button className="header-logo" onClick={goHome}><i className="fas fa-money-bill-wave"></i></button>
+    return <div className="header">
+        <div className="tmp-header">
+            <div>
+                <button className="header-logo" onClick={goHome}>Boritgoge</button>
+                <Link className="header-menu" to="/">home</Link>
+                <Link className="header-menu" to="/test">test</Link>
+            </div>
+            <SearchForm />
+        </div>
     </div>
 };
 
